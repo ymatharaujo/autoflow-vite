@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFlow - Automatize. Conecte. Escale.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-[#f8f9fe] text-gray-800">
+
+    <div class="background-gradient w-full">
+       <div class="background-gradient w-full">
+            <!-- Cabeçalho / Navbar -->
+            <header id="main-header" class="sticky top-0 z-50 transition-all duration-300">
+                <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <nav class="flex items-center justify-between py-4">
+                        <!-- Logo -->
+                        <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-600"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>AutoFlow</span>
+                        </a>
+
+                        <!-- Links de Navegação (Desktop) -->
+                        <div class="hidden lg:flex items-center space-x-8 font-medium text-gray-600">
+                            <a href="#" class="hover:text-indigo-600 transition-colors">Início</a>
+                            <a href="#how-it-works" class="hover:text-indigo-600 transition-colors">Como Funciona</a>
+                            <a href="#benefits" class="hover:text-indigo-600 transition-colors">Benefícios</a>
+                            <a href="#services" class="hover:text-indigo-600 transition-colors">Serviços</a>
+                            <a href="#contact" class="hover:text-indigo-600 transition-colors">Contato</a>
+                        </div>
+
+                        <!-- Botão de Ação (Desktop) -->
+                        <div class="hidden lg:flex">
+                            <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-6 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all">
+                                Solicitar Demonstração
+                            </a>
+                        </div>
+
+                        <!-- Botão do Menu (Mobile) -->
+                        <div class="lg:hidden">
+                            <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Menu Mobile -->
+                <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-sm shadow-lg">
+                    <a href="#" class="block py-3 px-6 text-gray-600 hover:bg-indigo-50">Início</a>
+                    <a href="#how-it-works" class="block py-3 px-6 text-gray-600 hover:bg-indigo-50">Como Funciona</a>
+                    <a href="#benefits" class="block py-3 px-6 text-gray-600 hover:bg-indigo-50">Benefícios</a>
+                    <a href="#services" class="block py-3 px-6 text-gray-600 hover:bg-indigo-50">Serviços</a>
+                    <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-indigo-50">Contato</a>
+                    <div class="p-4">
+                        <a href="#contact" class="block text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-6 py-2.5 rounded-lg shadow-md">
+                            Solicitar Demonstração
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Seção Principal (Hero) -->
+                <main class="py-16 sm:py-20 lg:py-24">
+                    <div class="grid lg:grid-cols-2 gap-16 items-center">
+                        <!-- Conteúdo de Texto -->
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                                <span class="text-indigo-600 block">Automatize.</span>
+                                <span class="block">Conecte.</span>
+                                <span class="block">Escale.</span>
+                            </h1>
+                            <p class="mt-6 text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
+                                Criamos automações inteligentes que eliminam tarefas manuais e fazem seu negócio fluir.
+                            </p>
+                            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                                <a href="#contact" class="w-full sm:w-auto flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    Ver Demonstração
+                                </a>
+                                <a href="#contact" class="w-full sm:w-auto flex items-center justify-center bg-white border border-gray-300 text-gray-800 font-semibold px-8 py-3 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-400 transition-all">
+                                    Comece Agora
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 text-indigo-600"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </a>
+                            </div>
+                            <div class="mt-16 grid grid-cols-3 gap-4 text-center max-w-lg mx-auto lg:mx-0">
+                                <div>
+                                    <p class="text-3xl font-bold text-indigo-600">85%</p>
+                                    <p class="text-sm text-gray-500">Menos tempo</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-bold text-indigo-600">95%</p>
+                                    <p class="text-sm text-gray-500">Menos erros</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-bold text-indigo-600">40h</p>
+                                    <p class="text-sm text-gray-500">Economizadas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visualização da Automação -->
+                        <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-200/50">
+                            <h3 class="text-xl font-bold text-gray-900">Automação em Ação</h3>
+                            <p id="automation-status" class="text-sm text-gray-500 mb-6 h-5"></p>
+
+                            <div id="automation-steps-grid" class="grid grid-cols-3 gap-x-10 gap-y-4">
+                                <!-- Os itens da automação serão gerados pelo JavaScript -->
+                            </div>
+
+                            <!-- Barra de Progresso -->
+                            <div class="mt-6">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-600">Progresso</span>
+                                    <span id="progress-text" class="text-sm font-medium text-gray-500">0/6</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div id="progress-bar" class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2.5 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+        <!-- Seção Como Funciona -->
+        <section id="how-it-works" class="py-20 sm:py-24 bg-white">
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Título da Seção -->
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight revealable">Como funciona nossa automação</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto revealable" style="transition-delay: 150ms;">Um processo simples e eficiente que transforma suas operações em apenas 3 etapas.</p>
+                </div>
+
+                <!-- Linha do Tempo -->
+                <div class="relative">
+                    <!-- Linha vertical (apenas em desktop) -->
+                    <div class="hidden md:block absolute left-1/2 -ml-px w-0.5 h-full bg-gray-200" aria-hidden="true"></div>
+
+                    <!-- Etapa 1 -->
+                    <div class="relative md:flex md:justify-between md:items-center mb-16">
+                        <div class="md:w-1/2 md:pr-8 revealable">
+                            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <span class="text-blue-500 font-bold text-sm">Etapa 1</span>
+                                <h3 class="mt-2 text-2xl font-bold text-gray-900">Identificamos seus gargalos</h3>
+                                <p class="mt-3 text-gray-600">Analisamos seus processos atuais e identificamos oportunidades de automação que gerarão maior impacto, focando em otimizar seu tempo e recursos.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 -ml-6 w-12 h-12 items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl shadow-lg revealable">
+                            1
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- Etapa 2 -->
+                    <div class="relative md:flex md:justify-between md:items-center mb-16">
+                        <div class="md:w-1/2"></div>
+                        <div class="hidden md:flex absolute left-1/2 -ml-6 w-12 h-12 items-center justify-center rounded-full bg-purple-500 text-white font-bold text-xl shadow-lg revealable">
+                            2
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 revealable">
+                            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <span class="text-purple-500 font-bold text-sm">Etapa 2</span>
+                                <h3 class="mt-2 text-2xl font-bold text-gray-900">Criamos o fluxo de automação</h3>
+                                <p class="mt-3 text-gray-600">Desenvolvemos soluções personalizadas conectando suas ferramentas favoritas de forma inteligente, garantindo uma integração perfeita e eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 3 -->
+                    <div class="relative md:flex md:justify-between md:items-center">
+                        <div class="md:w-1/2 md:pr-8 revealable">
+                            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <span class="text-pink-500 font-bold text-sm">Etapa 3</span>
+                                <h3 class="mt-2 text-2xl font-bold text-gray-900">Você foca no que importa</h3>
+                                <p class="mt-3 text-gray-600">Com processos automatizados, você tem mais tempo para estratégia e crescimento do seu negócio, deixando o trabalho repetitivo para a nossa IA.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 -ml-6 w-12 h-12 items-center justify-center rounded-full bg-pink-500 text-white font-bold text-xl shadow-lg revealable">
+                            3
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                </div>
+
+                <!-- Botão Final -->
+                <div class="text-center mt-20 revealable">
+                    <a href="#contact" class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all">
+                        Comece a Automatizar Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Benefícios -->
+        <section id="benefits" class="py-20 sm:py-24">
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Título da Seção -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight revealable">Por que escolher nossa automação?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto revealable" style="transition-delay: 150ms;">Transforme sua operação com benefícios comprovados que impactam diretamente seus resultados.</p>
+                </div>
+
+                <!-- Grid de Benefícios -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Economia de tempo -->
+                    <div class="bg-blue-50/50 p-6 rounded-2xl relative border border-blue-100 revealable transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:-translate-y-1">
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-blue-300 rounded-full"></div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Economia de tempo</h3>
+                                <p class="mt-1 text-sm text-gray-600">Automatize tarefas repetitivas e ganhe horas valiosas para focar no crescimento do seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Redução de erros -->
+                    <div class="bg-green-50/50 p-6 rounded-2xl relative border border-green-100 revealable transition-all duration-300 hover:shadow-xl hover:border-green-200 hover:-translate-y-1" style="transition-delay: 200ms;">
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-green-300 rounded-full"></div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Redução de erros</h3>
+                                <p class="mt-1 text-sm text-gray-600">Elimine falhas humanas com processos automatizados que garantem precisão e consistência.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Automação sem código -->
+                    <div class="bg-purple-50/50 p-6 rounded-2xl relative border border-purple-100 revealable transition-all duration-300 hover:shadow-xl hover:border-purple-200 hover:-translate-y-1" style="transition-delay: 300ms;">
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-purple-300 rounded-full"></div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Automação sem código</h3>
+                                <p class="mt-1 text-sm text-gray-600">Crie fluxos complexos sem precisar programar, usando interfaces visuais e intuitivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4: Integração entre ferramentas -->
+                    <div class="bg-pink-50/50 p-6 rounded-2xl relative border border-pink-100 revealable transition-all duration-300 hover:shadow-xl hover:border-pink-200 hover:-translate-y-1" style="transition-delay: 400ms;">
+                        <div class="absolute top-4 right-4 w-3 h-3 bg-pink-300 rounded-full"></div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Integração entre ferramentas</h3>
+                                <p class="mt-1 text-sm text-gray-600">Conecte todos os seus sistemas favoritos em um fluxo único e harmonioso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barra de Estatísticas -->
+                <div class="mt-16 bg-white p-8 rounded-2xl shadow-lg border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-8 text-center revealable" style="transition-delay: 500ms;">
+                    <div>
+                        <p class="text-4xl font-bold text-indigo-600">85%</p>
+                        <p class="mt-1 text-gray-500">Redução no tempo de processos</p>
+                    </div>
+                    <div class="border-t md:border-t-0 md:border-l md:border-r border-gray-200 px-8 py-8 md:py-0">
+                        <p class="text-4xl font-bold text-indigo-600">95%</p>
+                        <p class="mt-1 text-gray-500">Menos erros operacionais</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold text-indigo-600">40h</p>
+                        <p class="mt-1 text-gray-500">Economizadas por mês</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services" class="py-20 sm:py-24 bg-white">
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Título da Seção -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight revealable">Nossos serviços de automação</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto revealable" style="transition-delay: 150ms;">Soluções completas para cada necessidade, desde automações simples até sistemas complexos.</p>
+                </div>
+
+                <!-- Grid de Serviços -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Card 1: n8n -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col revealable transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6v14zM18 18h-6v-7h6v7z"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">n8n (Back-end Open Source)</h3>
+                            </div>
+                            <p class="mt-4 text-gray-600">Automações robustas e personalizáveis com controle total sobre seus dados e processos.</p>
+                            <ul class="mt-6 space-y-2 text-gray-600">
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M20 6 9 17l-5-5"/></svg><span>Hospedagem própria</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M20 6 9 17l-5-5"/></svg><span>Customização total</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M20 6 9 17l-5-5"/></svg><span>Integração com APIs</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M20 6 9 17l-5-5"/></svg><span>Fluxos complexos</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block text-center bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-blue-600">Saiba mais</a>
+                    </div>
+
+                    <!-- Card 2: Zapier/Make -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col revealable transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl" style="transition-delay: 200ms;">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Zapier/Make (No-Code)</h3>
+                            </div>
+                            <p class="mt-4 text-gray-600">Soluções rápidas e visuais para conectar suas ferramentas favoritas sem programação.</p>
+                            <ul class="mt-6 space-y-2 text-gray-600">
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500"><path d="M20 6 9 17l-5-5"/></svg><span>Setup rápido</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500"><path d="M20 6 9 17l-5-5"/></svg><span>Interface visual</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500"><path d="M20 6 9 17l-5-5"/></svg><span>1000+ integrações</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-purple-500"><path d="M20 6 9 17l-5-5"/></svg><span>Fácil manutenção</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block text-center bg-purple-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-purple-600">Saiba mais</a>
+                    </div>
+
+                    <!-- Card 3: Integrações com API -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col revealable transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl" style="transition-delay: 300ms;">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Integrações com API</h3>
+                            </div>
+                            <p class="mt-4 text-gray-600">Desenvolvemos conectores personalizados para sistemas específicos do seu negócio.</p>
+                            <ul class="mt-6 space-y-2 text-gray-600">
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M20 6 9 17l-5-5"/></svg><span>APIs customizadas</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M20 6 9 17l-5-5"/></svg><span>Webhooks</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M20 6 9 17l-5-5"/></svg><span>Sincronização real-time</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M20 6 9 17l-5-5"/></svg><span>Documentação completa</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block text-center bg-green-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-green-600">Saiba mais</a>
+                    </div>
+
+                    <!-- Card 4: Robôs Personalizados -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col revealable transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-2xl" style="transition-delay: 400ms;">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="12" width="8" height="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2a2 2 0 0 0 4 0v-2a2 2 0 0 0-4 0Z"/><path d="M18 12V8"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Robôs Personalizados</h3>
+                            </div>
+                            <p class="mt-4 text-gray-600">Chatbots inteligentes e assistentes virtuais para atendimento e processos internos.</p>
+                            <ul class="mt-6 space-y-2 text-gray-600">
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-pink-500"><path d="M20 6 9 17l-5-5"/></svg><span>IA conversacional</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-pink-500"><path d="M20 6 9 17l-5-5"/></svg><span>Integração WhatsApp</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-pink-500"><path d="M20 6 9 17l-5-5"/></svg><span>Respostas automáticas</span></li>
+                                <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-pink-500"><path d="M20 6 9 17l-5-5"/></svg><span>Análise de dados</span></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-8 block text-center bg-pink-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-pink-600">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção CTA e Contato -->
+        <section id="contact" class="py-20 sm:py-24 bg-white">
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <!-- Coluna da Esquerda: Formulário -->
+                    <div class="bg-white p-8 rounded-2xl shadow-2xl border border-gray-100 revealable">
+                        <h3 class="text-3xl font-bold text-gray-900">Envie sua Mensagem</h3>
+                        <p class="mt-2 text-gray-600">Tem um projeto em mente? Fale conosco!</p>
+                        
+                        <!-- Formulário de Contato -->
+                        <form action="https://formspree.io/f/SEU_EMAIL_AQUI" method="POST" class="mt-8 space-y-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700">Nome Completo *</label>
+                                <input type="text" name="name" id="full-name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">E-mail *</label>
+                                <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700">Assunto *</label>
+                                <select id="subject" name="subject" required class="mt-1 block w-full px-4 py-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                    <option>Criar um novo projeto</option>
+                                    <option>Fazer Orçamento</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensagem *</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all hover:scale-105">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Coluna da Direita: Informações -->
+                    <div class="revealable" style="transition-delay: 200ms;">
+                        <h3 class="text-3xl font-bold text-gray-900">Informações de Contato</h3>
+                        <p class="mt-2 text-gray-600">Estamos aqui para ajudar. Entre em contato conosco através dos canais abaixo.</p>
+                        <div class="mt-8 space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">E-mail</h4>
+                                    <p class="text-gray-600">contato@autoflow.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Telefone</h4>
+                                    <p class="text-gray-600">(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Localização</h4>
+                                    <p class="text-gray-600">São Paulo, SP - Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-400">
+            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm">&copy; 2025 AutoFlow. Todos os direitos reservados.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">WhatsApp</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Instagram</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Email</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

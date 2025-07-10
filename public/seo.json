@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AutoFlow",
+  "url": "https://www.autoflow.com.br",
+  "logo": "https://www.autoflow.com.br/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-11-99999-9999",
+    "contactType": "Atendimento ao Cliente",
+    "areaServed": "BR",
+    "availableLanguage": ["Portuguese"]
+  },
+  "sameAs": [
+    "https://www.instagram.com/autoflow",
+    "https://www.linkedin.com/company/autoflow"
+  ],
+  "description": "Automatize, conecte e escale seu negócio com as soluções de automação inteligentes da AutoFlow. Eliminamos tarefas manuais para que seu negócio possa fluir.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "potentialAction": {
+    "@type": "CommunicateAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.autoflow.com.br/#contact",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/IOSPlatform",
+        "https://schema.org/AndroidPlatform"
+      ]
+    },
+    "name": "Solicitar Demonstração"
+  }
+}
